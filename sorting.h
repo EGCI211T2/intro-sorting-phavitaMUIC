@@ -4,9 +4,9 @@ void display(int *a,int N);
 
 void swap(int &a,int &b){
     int c;
-    c=b;
-    b=a;
-    a=c;
+    c=a;
+    a=b;
+    b=c;
 }
 
 void sort(int *a, int N){
@@ -20,4 +20,11 @@ void sort(int *a, int N){
     }
     
 }
-void 
+void display (int *a, int N){
+    int i;
+    for (i=0; i<N;i++){
+        cout<<" "<<a[i];
+    }
+    cout<<endl;
+
+}

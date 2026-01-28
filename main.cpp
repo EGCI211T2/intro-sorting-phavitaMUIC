@@ -15,13 +15,16 @@ int main(int argc, char * argv[]) {
   cout<<"argc is "<<argc<<endl;
     int i,N;
     int *a;
+    a = new int[argc-1];
+
     for(i=1;i<argc;i++){
         cout<<"argv[" << i<<"]" <<argv[i]<<endl;
+          a[i-1] = atoi(argv[i]);
+    
     }
     N=argc-1;
+
     /* Convert to numbers*/
-
-
     cout<<"Before sorting:";
     display(a,N);
     
