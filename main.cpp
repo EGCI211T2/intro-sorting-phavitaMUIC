@@ -7,6 +7,7 @@
 
 #include <iostream>
 using namespace std;
+#include "sorting.h"
 
 int main(int argc, char * argv[]) {
     
@@ -16,10 +17,11 @@ int main(int argc, char * argv[]) {
     int *a;
     for(i=1;i<argc;i++){
         cout<<"argv[" << i<<"]" <<argv[i]<<endl;
-      
     }
-    /* Convert to numbers*/
     N=argc-1;
+    /* Convert to numbers*/
+
+
     cout<<"Before sorting:";
     display(a,N);
     
