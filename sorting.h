@@ -39,18 +39,18 @@ void display (int *a, int N){
 void selectionsort(int *a,int N){
     int i,mi,j;
     int min=a[0];
-    mi=0;
+    int *p;
+    //mi=0;
     for(j=0;j<N-1;j++){
-        min = a[j];
-        mi=j;
+        //mi=j;
+        p=&a[j];
          for(i=j+1;i<N;i++){
-            if(min>a[i]){
-                min = a[i];
-                mi=i;
-                
+            if(*p>a[i]){
+                p = &a[i];
+                //mi=i;
             }
-
         }
-        swap (a[j],a[mi]);
+        swap (a[j],*p);
     }
 }
+
